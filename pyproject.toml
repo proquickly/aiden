@@ -1,0 +1,20 @@
+[project]
+name = "christine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Andy Miles", email = "andy@proquickly.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.0.15",
+    "flask>=3.1.1",
+]
+
+[project.scripts]
+christine = "christine:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
